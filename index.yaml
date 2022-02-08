@@ -3,12 +3,12 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-08T23:02:01.960672328+08:00"
+    created: "2022-02-08T23:28:30.487722358+08:00"
     description: A Helm chart for Kubernetes
     digest: ed531367a5f826bd6dfc6506525e93fe9b817eb8f8e78d2a28219a77d70eb69b
     name: mychart
     type: application
     urls:
-    - https://github.com/Lannnnh/Charts/mychart-0.1.0.tgz
+    - https://lannnnh.github.io/Charts/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-08T23:02:01.958350964+08:00"
+generated: "2022-02-08T23:28:30.486073535+08:00"

@@ -40,6 +40,15 @@ helm.sh/chart: {{ include "mychart.chart" . }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
+k8s-app: {{ include "mychart.name" . }}
+qcloud-app: {{ include "mychart.name" . }}
+{{- end }}
+
+{{/*
+Common annotations
+*/}}
+{{- define "mychart.annotations" -}}
+service.kubernetes.io/tke-existed-lbid: {{ .Values.service.loadbalanceid }}
 {{- end }}
 
 {{/*
@@ -48,15 +57,4 @@ Selector labels
 {{- define "mychart.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "mychart.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
-{{- end }}
-
-{{/*
-Create the name of the service account to use
-*/}}
-{{- define "mychart.serviceAccountName" -}}
-{{- if .Values.serviceAccount.create }}
-{{- default (include "mychart.fullname" .) .Values.serviceAccount.name }}
-{{- else }}
-{{- default "default" .Values.serviceAccount.name }}
-{{- end }}
 {{- end }}

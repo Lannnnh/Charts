@@ -1,2 +1,2 @@
-# Charts
-this is lan4h's chart repo.
+# helm-charts
+this is lan4h's helm chart repo.

@@ -48,7 +48,7 @@ qcloud-app: {{ include "mychart.name" . }}
 Common annotations
 */}}
 {{- define "mychart.annotations" -}}
-service.kubernetes.io/tke-existed-lbid: {{ .Values.service.loadbalanceid }}
+# service.kubernetes.io/tke-existed-lbid: {{ .Values.service.loadbalanceid }}
 {{- end }}
 
 {{/*

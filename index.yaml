@@ -3,12 +3,22 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-02-13T22:16:03.705066224+08:00"
+    created: "2022-03-16T20:43:58.422428+08:00"
     description: A Helm chart for Kubernetes
-    digest: c789a16c4d46fbb578cca418f91ff50475a7d287e945aaee23b8782a32a726ea
+    digest: c76a74a8b56c48b4c490a8fcf21d5bdb5be6cbe0cccede3d7327eecfc9abdf2f
+    name: mychart
+    type: application
+    urls:
+    - https://lannnnh.github.io/helm-charts/mychart-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-16T20:43:58.422011+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 7ac997c79f5c8e2fc95567ae0bbf011d31281549b30090a4ad3b2d96597c3170
     name: mychart
     type: application
     urls:
     - https://lannnnh.github.io/helm-charts/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-13T22:16:03.699498693+08:00"
+generated: "2022-03-16T20:43:58.421398+08:00"

@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: hkccr.ccs.tencentyun.com/lan4h_container/lan4h_docker:0.0.1
+  repository: hkccr.ccs.tencentyun.com/lan4h_container/lan4h_docker:0.0.2
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
